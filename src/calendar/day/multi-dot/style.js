@@ -41,7 +41,7 @@ export default function styleConstructor(theme = {}) {
     dot: {
       width: 4,
       height: 4,
-      marginTop: 5,
+      marginTop: Platform.OS === 'android' ? 6 : 8,
       marginLeft: 1,
       marginRight: 1,
       borderRadius: 2,
